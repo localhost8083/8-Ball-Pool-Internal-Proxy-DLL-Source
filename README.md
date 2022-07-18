@@ -32,3 +32,10 @@ How to Run:
 Build dll with name dsound.dll and paste into Gameloop UI folder. Now Open AndroidEmulatorEx to load dll.
 
 I am sharing this to make this source better, Please keep sharing and never think about selling it :P
+
+**Credits:
+
+Main cheat Source is from public github.
+Dll Source: https://github.com/elishacloud/DirectX-Wrappers
+
+Note: It was messed up when i got, i just added few codes and fixed all bugs.**
