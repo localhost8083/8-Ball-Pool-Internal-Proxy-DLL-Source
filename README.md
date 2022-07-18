@@ -13,19 +13,26 @@ For Latest version you need to update offsets.
 
 Features:
 
+
 => Aim Line
+
 => Automatic Aim
+
 => AutoPlay [Calling Pocket isn't working right now]
 
 
 Support Emulators
 
 => Gameloop [For Latest Gameloop Use AndroidEmulatorEx.exe to load automatic dll]
+
 => Smartgaga [You have to add smartgaga window class if you wnat to make this work]
+
 
 ToDo:
 Update Offsets to work with 5.8.1 [ I don't know how to Generate 8BP Class etc. ]
+
 Fix Automatic call pockets. [Its all present there any pro coder may fix this]
+
 
 How to Run:
 
@@ -36,6 +43,7 @@ I am sharing this to make this source better, Please keep sharing and never thin
 **Credits:
 
 Main cheat Source is from public github.
+
 Dll Source: https://github.com/elishacloud/DirectX-Wrappers
 
 Note: It was messed up when i got, i just added few codes and fixed all bugs.**
