@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{457D22C0-E3D3-4BF7-BD01-144A085C7B75}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>dsound</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>D:\8 Ball Pool\v5.0\Proxy\dsound\discord_inc;D:\8 Ball Pool\v5.0\Proxy\dsound\libs\ThemidaSDK\Include\C;D:\8 Ball Pool\v5.0\Proxy\dsound\libs\openssl\include;D:\8 Ball Pool\v5.0\Proxy\dsound\libs\curl\include;D:\8 Ball Pool\v5.0\Proxy\dsound\libs\cryptopp\include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;D:\8 Ball Pool\v5.0\Proxy\dsound\json-develop\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\8 Ball Pool\v5.0\Proxy\dsound\libs\ThemidaSDK\Lib\COFF;D:\8 Ball Pool\v5.0\Proxy\dsound\libs\openssl\lib;D:\8 Ball Pool\v5.0\Proxy\dsound\libs\curl\lib;D:\8 Ball Pool\v5.0\Proxy\dsound\libs\cryptopp\lib;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>dsound.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>dsound.def</ModuleDefinitionFile>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalDependencies>./libs/discord-rpc.lib;./libs/cryptopp/lib/cryptopp-static.lib;./libs/curl/lib/libcurl.lib;./libs/openssl/lib/libcrypto.lib;./libs/openssl/lib/libssl.lib;./libs/zlib.lib;Normaliz.lib;Ws2_32.lib;Wldap32.lib;Crypt32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AdsManager.cpp" />
+    <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="Balls.cpp" />
+    <ClCompile Include="CodeManager.cpp" />
+    <ClCompile Include="config.cpp" />
+    <ClCompile Include="discord.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="GenericData.cpp" />
+    <ClCompile Include="GlobalVars.cpp" />
+    <ClCompile Include="GUI.cpp" />
+    <ClCompile Include="IDirectSound3DBuffer8.cpp" />
+    <ClCompile Include="IDirectSound3DListener8.cpp" />
+    <ClCompile Include="IDirectSoundBuffer8.cpp" />
+    <ClCompile Include="IDirectSound8.cpp" />
+    <ClCompile Include="IDirectSoundCapture8.cpp" />
+    <ClCompile Include="IDirectSoundCaptureBuffer8.cpp" />
+    <ClCompile Include="IDirectSoundCaptureFXAec8.cpp" />
+    <ClCompile Include="IDirectSoundCaptureFXNoiseSuppress8.cpp" />
+    <ClCompile Include="IDirectSoundFullDuplex8.cpp" />
+    <ClCompile Include="IDirectSoundFXChorus8.cpp" />
+    <ClCompile Include="IDirectSoundFXCompressor8.cpp" />
+    <ClCompile Include="IDirectSoundFXDistortion8.cpp" />
+    <ClCompile Include="IDirectSoundFXEcho8.cpp" />
+    <ClCompile Include="IDirectSoundFXFlanger8.cpp" />
+    <ClCompile Include="IDirectSoundFXGargle8.cpp" />
+    <ClCompile Include="IDirectSoundFXI3DL2Reverb8.cpp" />
+    <ClCompile Include="IDirectSoundFXParamEq8.cpp" />
+    <ClCompile Include="IDirectSoundFXWavesReverb8.cpp" />
+    <ClCompile Include="IDirectSoundNotify8.cpp" />
+    <ClCompile Include="IKsPropertySet.cpp" />
+    <ClCompile Include="ImGuiCustom.cpp" />
+    <ClCompile Include="ImGui\imgui.cpp" />
+    <ClCompile Include="ImGui\imgui_demo.cpp" />
+    <ClCompile Include="ImGui\imgui_draw.cpp" />
+    <ClCompile Include="ImGui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="ImGui\imgui_tables.cpp" />
+    <ClCompile Include="ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="InterfaceQuery.cpp" />
+    <ClCompile Include="EntryMain.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MenuManager.cpp" />
+    <ClCompile Include="Prediction.cpp" />
+    <ClCompile Include="TableInfo.cpp" />
+    <ClCompile Include="UserInfo.cpp" />
+    <ClCompile Include="UserSettings.cpp" />
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="Vector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dsound.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddressLookupTable.h" />
+    <ClInclude Include="AdsManager.h" />
+    <ClInclude Include="api.hpp" />
+    <ClInclude Include="Ball.h" />
+    <ClInclude Include="Balls.h" />
+    <ClInclude Include="CodeManager.h" />
+    <ClInclude Include="Colors.hpp" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="const.h" />
+    <ClInclude Include="d3d9.h" />
+    <ClInclude Include="discord.h" />
+    <ClInclude Include="discord_register.h" />
+    <ClInclude Include="discord_rpc.h" />
+    <ClInclude Include="dsound.h" />
+    <ClInclude Include="EntryMain.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GenericData.h" />
+    <ClInclude Include="globalFunks.h" />
+    <ClInclude Include="GlobalVars.h" />
+    <ClInclude Include="GUI.h" />
+    <ClInclude Include="IDirectSound3DBuffer8.h" />
+    <ClInclude Include="IDirectSound3DListener8.h" />
+    <ClInclude Include="IDirectSoundBuffer8.h" />
+    <ClInclude Include="IDirectSound8.h" />
+    <ClInclude Include="IDirectSoundCapture8.h" />
+    <ClInclude Include="IDirectSoundCaptureBuffer8.h" />
+    <ClInclude Include="IDirectSoundCaptureFXAec8.h" />
+    <ClInclude Include="IDirectSoundCaptureFXNoiseSuppress8.h" />
+    <ClInclude Include="IDirectSoundFullDuplex8.h" />
+    <ClInclude Include="IDirectSoundFXChorus8.h" />
+    <ClInclude Include="IDirectSoundFXCompressor8.h" />
+    <ClInclude Include="IDirectSoundFXDistortion8.h" />
+    <ClInclude Include="IDirectSoundFXEcho8.h" />
+    <ClInclude Include="IDirectSoundFXFlanger8.h" />
+    <ClInclude Include="IDirectSoundFXGargle8.h" />
+    <ClInclude Include="IDirectSoundFXI3DL2Reverb8.h" />
+    <ClInclude Include="IDirectSoundFXParamEq8.h" />
+    <ClInclude Include="IDirectSoundFXWavesReverb8.h" />
+    <ClInclude Include="IDirectSoundNotify8.h" />
+    <ClInclude Include="IKsPropertySet.h" />
+    <ClInclude Include="ImGuiCustom.h" />
+    <ClInclude Include="ImGui\imconfig.h" />
+    <ClInclude Include="ImGui\imgui.h" />
+    <ClInclude Include="ImGui\imgui_impl_dx9.h" />
+    <ClInclude Include="ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="ImGui\imgui_internal.h" />
+    <ClInclude Include="ImGui\imstb_rectpack.h" />
+    <ClInclude Include="ImGui\imstb_textedit.h" />
+    <ClInclude Include="ImGui\imstb_truetype.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MenuManager.h" />
+    <ClInclude Include="Offsets.h" />
+    <ClInclude Include="OneTimeAssignment.h" />
+    <ClInclude Include="Prediction.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="simpleini.h" />
+    <ClInclude Include="skCrypt.h" />
+    <ClInclude Include="syscall.h" />
+    <ClInclude Include="TableInfo.h" />
+    <ClInclude Include="UserInfo.h" />
+    <ClInclude Include="UserSettings.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="xorstr.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

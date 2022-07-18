@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="IDirectSound3DBuffer8.cpp" />
+    <ClCompile Include="IDirectSound3DListener8.cpp" />
+    <ClCompile Include="IDirectSoundBuffer8.cpp" />
+    <ClCompile Include="IDirectSound8.cpp" />
+    <ClCompile Include="IDirectSoundCapture8.cpp" />
+    <ClCompile Include="IDirectSoundCaptureBuffer8.cpp" />
+    <ClCompile Include="IDirectSoundCaptureFXAec8.cpp" />
+    <ClCompile Include="IDirectSoundCaptureFXNoiseSuppress8.cpp" />
+    <ClCompile Include="IDirectSoundFullDuplex8.cpp" />
+    <ClCompile Include="IDirectSoundFXChorus8.cpp" />
+    <ClCompile Include="IDirectSoundFXCompressor8.cpp" />
+    <ClCompile Include="IDirectSoundFXDistortion8.cpp" />
+    <ClCompile Include="IDirectSoundFXEcho8.cpp" />
+    <ClCompile Include="IDirectSoundFXFlanger8.cpp" />
+    <ClCompile Include="IDirectSoundFXGargle8.cpp" />
+    <ClCompile Include="IDirectSoundFXI3DL2Reverb8.cpp" />
+    <ClCompile Include="IDirectSoundFXParamEq8.cpp" />
+    <ClCompile Include="IDirectSoundFXWavesReverb8.cpp" />
+    <ClCompile Include="IDirectSoundNotify8.cpp" />
+    <ClCompile Include="IKsPropertySet.cpp" />
+    <ClCompile Include="InterfaceQuery.cpp" />
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_demo.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx9.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_tables.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="AdsManager.cpp" />
+    <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="Balls.cpp" />
+    <ClCompile Include="CodeManager.cpp" />
+    <ClCompile Include="config.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="GenericData.cpp" />
+    <ClCompile Include="GlobalVars.cpp" />
+    <ClCompile Include="GUI.cpp" />
+    <ClCompile Include="ImGuiCustom.cpp" />
+    <ClCompile Include="EntryMain.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MenuManager.cpp" />
+    <ClCompile Include="Prediction.cpp" />
+    <ClCompile Include="TableInfo.cpp" />
+    <ClCompile Include="UserInfo.cpp" />
+    <ClCompile Include="UserSettings.cpp" />
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="Vector.cpp" />
+    <ClCompile Include="discord.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddressLookupTable.h" />
+    <ClInclude Include="dsound.h" />
+    <ClInclude Include="IDirectSound3DBuffer8.h" />
+    <ClInclude Include="IDirectSound3DListener8.h" />
+    <ClInclude Include="IDirectSoundBuffer8.h" />
+    <ClInclude Include="IDirectSound8.h" />
+    <ClInclude Include="IDirectSoundCapture8.h" />
+    <ClInclude Include="IDirectSoundCaptureBuffer8.h" />
+    <ClInclude Include="IDirectSoundCaptureFXAec8.h" />
+    <ClInclude Include="IDirectSoundCaptureFXNoiseSuppress8.h" />
+    <ClInclude Include="IDirectSoundFullDuplex8.h" />
+    <ClInclude Include="IDirectSoundFXChorus8.h" />
+    <ClInclude Include="IDirectSoundFXCompressor8.h" />
+    <ClInclude Include="IDirectSoundFXDistortion8.h" />
+    <ClInclude Include="IDirectSoundFXEcho8.h" />
+    <ClInclude Include="IDirectSoundFXFlanger8.h" />
+    <ClInclude Include="IDirectSoundFXGargle8.h" />
+    <ClInclude Include="IDirectSoundFXI3DL2Reverb8.h" />
+    <ClInclude Include="IDirectSoundFXParamEq8.h" />
+    <ClInclude Include="IDirectSoundFXWavesReverb8.h" />
+    <ClInclude Include="IDirectSoundNotify8.h" />
+    <ClInclude Include="IKsPropertySet.h" />
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx9.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_win32.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="EntryMain.h" />
+    <ClInclude Include="AdsManager.h" />
+    <ClInclude Include="Ball.h" />
+    <ClInclude Include="Balls.h" />
+    <ClInclude Include="CodeManager.h" />
+    <ClInclude Include="Colors.hpp" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="const.h" />
+    <ClInclude Include="d3d9.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GenericData.h" />
+    <ClInclude Include="GlobalVars.h" />
+    <ClInclude Include="GUI.h" />
+    <ClInclude Include="ImGuiCustom.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MenuManager.h" />
+    <ClInclude Include="Offsets.h" />
+    <ClInclude Include="OneTimeAssignment.h" />
+    <ClInclude Include="Prediction.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="skCrypt.h" />
+    <ClInclude Include="TableInfo.h" />
+    <ClInclude Include="UserInfo.h" />
+    <ClInclude Include="UserSettings.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="simpleini.h" />
+    <ClInclude Include="globalFunks.h" />
+    <ClInclude Include="api.hpp" />
+    <ClInclude Include="xorstr.hpp" />
+    <ClInclude Include="discord.h" />
+    <ClInclude Include="discord_register.h" />
+    <ClInclude Include="discord_rpc.h" />
+    <ClInclude Include="syscall.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dsound.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{5725a0a6-4ed8-4f3b-9ede-02018d68c42f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
