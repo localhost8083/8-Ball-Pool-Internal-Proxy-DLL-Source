@@ -39,3 +39,5 @@ Main cheat Source is from public github.
 Dll Source: https://github.com/elishacloud/DirectX-Wrappers
 
 Note: It was messed up when i got, i just added few codes and fixed all bugs.**
+
+## This codes shared for learning process. Mean for educational purposes only! Use at your own risks and i am not responsible for any kind of illigal use of this codes.
